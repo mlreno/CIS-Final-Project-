@@ -7,9 +7,9 @@
                 <meta name="viewport" 
                       content= "width=device-width, initial-scale=1.0">
         </head>
-       <div id="wrapper">
+<div id="wrapper">
           
-        <body>
+ <body>
 <header>
     <h1>
         <a href="index.html"> MadiLeigh Library</a>
@@ -21,18 +21,21 @@
         <li><a href="tog.html">Throne of Glass</a></li>
         <li><a href="acotar.html">A Court of Thorns and Roses</a></li>
         <li><a href="cc.html">Crescent City</a></li>
-        <li><a href="about.html">About</a></li>
     </ul>   
 </nav>
-<div id="homehero" class="hero"></div>
 
 <main>
+    <video controls poster="bookandtea-hero.jpg" width="750" height="500">
+        <source src="fpvideo.mp4" type="video/mp4">
+    </video>
+
     <h1>Welcome to the Fantasy</h1>
     <p>
         
         Here at MadiLeigh Library, we don't just accept that we're nerdy, we embrace it!
         This is a place for any readers who want to learn more about the fantastical world 
-        of Sarah J Maas before starting their reading journey, want a refresh of the series,
+        of <a href= "https://www.bloomsbury.com/us/author/sarah-j-maas/">Sarah J Maas</a> before starting their reading journey, 
+        want a refresh of the series,
         or simply want to have a place that feels like home!<br>
         Dive into the magical realms of "Throne of Glass," "A Court of Thorns and Roses," and "Crescent City" 
         as we explore the main characters, plot summaries, and captivating locations that make these series unforgettable.
@@ -40,26 +43,81 @@
 
     <h2><strong>WARNING: Spoilers for all three series ahead!</strong></h2>
     
+    <br> 
     <h2>Explore the Series</h2>
    
-    <div>
-    <button><a href="tog.html">Throne of Glass</href></button>
-    <button><a href="acotar.html">A Court of Thorns and Roses</href></button>
-    <button><a href="cc.html">Crescent City</href></button>
+    
+    <div class="nav-buttons" role="navigation" aria-label="Series links">
+        <a class="nav-button" href="tog.html">Throne of Glass</a>
+        <a class="nav-button" href="acotar.html">A Court of Thorns &amp; Roses</a>
+        <a class="nav-button" href="cc.html">Crescent City</a>
     </div>
+    
    
-   
-    <div id="contact"> 
+   <table>
+     <tr>
+         <th>Series Name</th>
+        <th>Number of Books</th>
+        <th>Release Date</th>
+        <th>Book Titles</th>
+    </tr>
+    <tr>
+         <td><a href="https://www.bloomsbury.com/us/series/throne-of-glass/">Throne of Glass</a></td>
+        <td>8 Books</td>
+        <td>2012-2018</td>
+        <td>Throne of Glass, Crown of Midnight, Assassin's Blade, Heir of Fire, Queen of Shadows, 
+        Empire of Storms, Tower of Dawn, Kingdom of Ash</td>
+   </tr>
+   <tr>
+        <td><a href="https://www.bloomsbury.com/us/series/a-court-of-thorns-and-roses/">A Court of Thorns and Roses</a></td>
+        <td>5 Books</td>
+        <td>2015-2021 (Active)</td>
+        <td>A Court of Thorns and Roses, A Court of Mist and Fury, A Court of Wings and Ruin,
+        A Court of Frost and Starlight, A Court of Silver Flames</td>
+   </tr>
+   <tr>
+        <td><a href="https://www.bloomsbury.com/us/series/crescent-city/">Crescent City</a></td>
+        <td>3 Books</td>
+        <td>2020-2024 (Active)</td>
+        <td>House of Earth and Blood, House of Sky and Breath, House of Flame and Shadow</td>
+   </tr>
+</table>
+
+<h4>Clicking on the series title within the table will take you to the Bloomsbury Publishing website so you 
+    can see purchasing options for the series</h4>
+
+<h3>Sign Up to be a part of the Madileighlibrary community</h3>
+
+<form method="post" action="#">
+    <div class="form-columns">
+        <div>
+            <label for="myFName">First Name</label>
+            <input type="text" id="myFName" name="myFName" required>
+            <label for="myLName">Last Name</label>
+            <input type="text" id="myLName" name="myLName" required>
+        </div>
+        <div>
+            <label for="myEmail">Email</label>
+            <input type="email" id="myEmail" name="myEmail" required>
+            <label for="myPhone">Phone</label>
+            <input type="tel" id="myPhone" name="myPhone" maxlength="12">
+        </div>
+    <input type="submit" value="Submit" class="submit-button">
+    </div>
+    
+</form>
+
+<div id="contact"> 
         <span class=".contact">CIS 300 Final Project</span><br>
         12010 Fantasy Road<br>
         Dallas, TX 75433<br>
         888-555-5555<br>
-    </div>
+</div>
 </main>
 <footer>
-            Copyright &copy; 2025 MadiLeigh Library <br>
-            <a href="mailto:madison@reno.com">madison@reno.com</a>
+        Copyright &copy; 2025 MadiLeigh Library <br>
+        <a href="mailto:madison@reno.com">madison@reno.com</a>
 </footer>
  </body>
-    </div>
-    </html>
+</div>
+ </html>
