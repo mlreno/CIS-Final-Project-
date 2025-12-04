@@ -89,12 +89,14 @@ h1 {
  letter-spacing: 0.25em; 
  padding-top: .5em; 
  padding-bottom: .5em; 
+ text-align: center;
 }
     
 h2 {
  color:#2F1B3D; 
  font-family: Georgia,'Times New Roman', serif; 
  text-shadow: 1px 1px #CCCCCC;
+ text-align: center;
 }
 
 h3 { 
@@ -102,8 +104,18 @@ h3 {
  color: #2F1B3D;
 }
 
+h4 {
+ font-family: Georgia,'Times New Roman', serif; 
+ color: #2F1B3D;
+}
+
 dt {
  color:#2F1B3D;
+}
+
+#href {
+ text-decoration: none;
+ color: #2F1B3D;
 }
 
 button {
@@ -144,16 +156,36 @@ button a {
  padding: 10px;
 }
 
-#homehero {
- height:500px; 
- background-image: url(bookandtea.jpg); 
+video {
+ max-width: 100%; 
+ height: auto; 
+ display: block; 
+ margin: auto;
+ padding-top: 1em;
+}
+
+#tog-hero {
+ height:400px; 
+ background-image: url(tog-hero.jpg); 
  background-size: 100% 100%;
  background-repeat: no-repeat;
  border:#2F1B3D solid 10px;
-}  
-        
-main ul {
- list-style-image: url(marker.gif);
+}
+
+#acotar-hero {
+ height:400px; 
+ background-image: url(acotar-hero.jpg); 
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+ border:#2F1B3D solid 10px;
+}   
+
+#cc-hero {
+ height:400px; 
+ background-image: url(cc-hero.jpg); 
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+ border:#2F1B3D solid 10px;
 }
 
 footer {
@@ -163,64 +195,130 @@ footer {
  font-family: Georgia, 'Times New Roman', serif; 
  padding:2em;
  background-color: #FFFFFF;
+ border:#2F1B3D solid 10px
 }
 
 @media (min-width: 600Px) {
  nav ul { 
-       display: flex;
-       flex-direction: row; 
-       flex-wrap: nowrap; 
-       justify-content: space-around; 
+     display: flex;
+     flex-direction: row; 
+     flex-wrap: nowrap; 
+     justify-content: space-around; 
       }
  nav li { 
-       border-bottom: none;
+     border-bottom: none;
       }
  section {
-       margin-left: 2em; 
-       margin-right: 2em;
-       flex: 1;
+     margin-left: 2em; 
+     margin-right: 2em;
+     flex: 1;
       }
  .flow {
-       display: flex; 
-       flex-direction: row; 
+     display: flex; 
+     flex-direction: row; 
       }
  }
 
+     
+.nav-buttons {
+     text-align: center;
+     margin: 1.25em 0;
+     }
 
+.nav-button {
+     display: inline-block;
+     background-color: #A891B8;
+     color: #FFFFFF;
+     font-weight: bold;
+     padding: 10px 20px;
+     margin: 6px;
+     border-radius: 5px;
+     text-decoration: none;
+     transition: transform 120ms ease, box-shadow 120ms ease, opacity 120ms ease;
+     }
+
+.nav-button:hover,
+.nav-button:focus {
+     opacity: 0.95;
+     transform: translateY(-2px);
+     box-shadow: 0 2px 6px rgba(47,27,61,0.15);
+     outline: none;
+     }
+
+.nav-button:focus {
+     box-shadow: 0 0 0 3px rgba(224,204,237,0.5);
+     }
+
+table {
+     border-collapse: collapse;
+     width: 100%;
+     margin-bottom: 1em;
+     }
+th, td {
+     border: 1px solid #2F1B3D;
+     padding: 8px;
+     text-align: center;
+     }
+th {
+     background-color: #E0CCED;
+     color: #2F1B3D;
+     }
+form {
+     border: 3px solid #2F1B3D ;
+     padding: 1em;
+     background-color: #F9F0FF;}
+
+form label {
+     display: block;
+     margin-top: 1em;
+     font-weight: bold;
+     color: #2F1B3D;
+}
+.submit-button {
+     display: inline-block;
+     background-color: #A891B8;
+     color: #FFFFFF;
+     font-weight: bold;
+     padding: 10px 20px;
+     margin: 6px;
+     border-radius: 5px;
+     text-decoration: none;
+     transition: transform 120ms ease, box-shadow 120ms ease, opacity 120ms ease;
+}
 @media (min-width: 1024px) {
  #wrapper {
-      margin: auto; 
-      width: 80%; 
-      border: 1px solid #2F1B3D; 
-      box-shadow: 3px 3px 3px #2F1B3D;
+     margin: auto; 
+     width: 80%; 
+     border: 1px solid #2F1B3D; 
+     box-shadow: 3px 3px 3px #2F1B3D;
 }
  nav {
-      text-align: left; 
-      padding-left: 1em;
+     text-align: left; 
+     padding-left: 1em;
 }
 @supports (display:grid) {
  nav ul {
-      flex-direction: column;
-      padding-top: 1em;
+     flex-direction: column;
+     padding-top: 1em;
       }
  .hero {
-      grid-area: hero;
+     grid-area: hero;
  }
  header {
-      grid-area: header;
+     grid-area: header;
  }
  nav {
-      grid-area: nav;
+     grid-area: nav;
 }
 main {
-      grid-area: main;
+     grid-area: main;
 }
 footer {
-      grid-area: footer;
+     grid-area: footer;
 }
 #wrapper {
-      display: grid;
-      grid-template: 
+     display: grid;
+     grid-template: 
         "header header"
         "nav hero"
         "nav main"
@@ -229,3 +327,4 @@ footer {
 }
  }
 }
+     
